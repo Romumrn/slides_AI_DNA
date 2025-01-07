@@ -13,22 +13,23 @@ date: "2025-01-07"
 
 ## Key Applications
 
-1. **Sequence Analysis**  
+::: incremental
+- **Sequence Analysis**  
    - Predict nucleotide sequences and structural motifs.  
    - _Examples_: DNABERT, GROVER.
 
-2. **Gene Function Prediction**  
+- **Gene Function Prediction**  
    - Identify promoters, enhancers, and regulatory elements.  
    - _Example_: Nucleotide Transformer.
 
-3. **Variant Impact Assessment**  
+- **Variant Impact Assessment**  
    - Analyze effects of genetic mutations.  
    - _Example_: Evo.
 
-4. **Synthetic Biology**  
+- **Synthetic Biology**  
    - Design genetic elements and genomes.  
    - _Examples_: CodonGAN, Evo.
-
+::: 
 ---
 
 ## How LLMs Work in DNA
