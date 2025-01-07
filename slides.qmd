@@ -1,0 +1,65 @@
+---
+title: "AIxDNA"
+format: revealjs
+author: "Romuald Marin"
+date: "2025-01-07"
+---
+## Introduction
+
+- AI, especially **Large Language Models (LLMs)**, is revolutionizing DNA studies.
+- By treating DNA as a language, LLMs analyze and interpret complex genomic information.
+
+---
+
+## Key Applications
+
+1. **Sequence Analysis**  
+   - Predict nucleotide sequences and structural motifs.  
+   - _Examples_: DNABERT, GROVER.
+
+2. **Gene Function Prediction**  
+   - Identify promoters, enhancers, and regulatory elements.  
+   - _Example_: Nucleotide Transformer.
+
+3. **Variant Impact Assessment**  
+   - Analyze effects of genetic mutations.  
+   - _Example_: Evo.
+
+4. **Synthetic Biology**  
+   - Design genetic elements and genomes.  
+   - _Examples_: CodonGAN, Evo.
+
+---
+
+## How LLMs Work in DNA
+
+1. **Tokenization**  
+   - DNA segmented into k-mers (like words in NLP).  
+
+2. **Pretraining**  
+   - Models learn patterns from vast genomic datasets.  
+
+3. **Fine-tuning**  
+   - Adapt for tasks like mutation prediction or classification.
+
+---
+
+## Advantages of LLMs in Genomics
+
+- **Scalability**: Efficiently process large datasets.  
+- **Accuracy**: Capture long-range dependencies in sequences.  
+- **Generalization**: Apply across species and contexts.
+
+---
+
+## Future Directions
+
+- Integration of **multi-omics data** (DNA, RNA, protein).  
+- Personalized medicine through genomic analysis.  
+- Multimodal models combining DNA, RNA, and structural data.
+
+---
+
+## Conclusion
+
+LLMs provide a powerful framework for advancing DNA comprehension, bridging the gap between sequence data and functional insights.
