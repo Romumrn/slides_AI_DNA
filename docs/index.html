@@ -9,9 +9,8 @@
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
-  <meta name="author" content="Romuald Marin">
-  <meta name="dcterms.date" content="2025-01-07">
-  <title>AIxDNA</title>
+  <meta name="author" content="Generated Presentation">
+  <title>AI and DNA: An Overview</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,96 +127,148 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">AIxDNA</h1>
+  <h1 class="title">AI and DNA: An Overview</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Romuald Marin 
+Generated Presentation 
 </div>
 </div>
 </div>
 
-  <p class="date">2025-01-07</p>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<ul>
-<li>AI, especially <strong>Large Language Models (LLMs)</strong>, is revolutionizing DNA studies.</li>
-<li>By treating DNA as a language, LLMs analyze and interpret complex genomic information.</li>
-</ul>
-</section>
-<section id="key-applications" class="slide level2">
-<h2>Key Applications</h2>
-<div>
-<ul>
-<li class="fragment"><strong>Sequence Analysis</strong>
-<ul>
-<li class="fragment">Predict nucleotide sequences and structural motifs.<br>
-</li>
-<li class="fragment"><em>Examples</em>: DNABERT, GROVER.</li>
-</ul></li>
-<li class="fragment"><strong>Gene Function Prediction</strong>
-<ul>
-<li class="fragment">Identify promoters, enhancers, and regulatory elements.<br>
-</li>
-<li class="fragment"><em>Example</em>: Nucleotide Transformer.</li>
-</ul></li>
-<li class="fragment"><strong>Variant Impact Assessment</strong>
-<ul>
-<li class="fragment">Analyze effects of genetic mutations.<br>
-</li>
-<li class="fragment"><em>Example</em>: Evo.</li>
-</ul></li>
-<li class="fragment"><strong>Synthetic Biology</strong>
-<ul>
-<li class="fragment">Design genetic elements and genomes.<br>
-</li>
-<li class="fragment"><em>Examples</em>: CodonGAN, Evo.</li>
-</ul></li>
-</ul>
+<section id="brief-overview" class="slide level2">
+<h2>Brief Overview</h2>
+<p>Artificial Intelligence (focused on Large Language Models, LLMs) in DNA comprehension.</p>
+<h3 id="ai-generated-visual">AI Generated Visual</h3>
+<div class="text-center">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/DALL-E-2024-12-19-13.30.png" style="width:70.0%"></p>
+<figcaption>Blablabla</figcaption>
+</figure>
+</div>
 </div>
 </section>
-<section id="how-llms-work-in-dna" class="slide level2">
-<h2>How LLMs Work in DNA</h2>
+<section id="general-context" class="slide level2">
+<h2>General Context</h2>
+<ul>
+<li><strong>Large Language Models (LLMs)</strong>:
+<ul>
+<li>Deep learning models trained on sequential data.</li>
+<li>Ideal for natural language processing due to their context-aware predictions.</li>
+</ul></li>
+<li><strong>Application to DNA</strong>:
+<ul>
+<li>DNA sequences can be treated as a “language.”</li>
+<li>Nucleotides (A, T, C, G) form the “alphabet.”</li>
+<li>LLMs analyze patterns in genomic data.</li>
+</ul></li>
+</ul>
+<h3 id="applications-in-genomics">Applications in Genomics</h3>
+<ul>
+<li>Identifying enhancer-promoter interactions.</li>
+<li>Predicting roles of genomic regions.</li>
+<li>Analyzing mutation impacts.</li>
+<li>Comparing genomic sequences across species.</li>
+</ul>
+</section>
+<section id="list-of-available-models" class="slide level2">
+<h2>List of Available Models</h2>
 <ol type="1">
-<li><strong>Tokenization</strong>
-<ul>
-<li>DNA segmented into k-mers (like words in NLP).</li>
-</ul></li>
-<li><strong>Pretraining</strong>
-<ul>
-<li>Models learn patterns from vast genomic datasets.</li>
-</ul></li>
-<li><strong>Fine-tuning</strong>
-<ul>
-<li>Adapt for tasks like mutation prediction or classification.</li>
-</ul></li>
+<li><strong>DNABERT-2</strong> <a href="https://github.com/MAGICS-LAB/DNABERT_2">GitHub Link</a></li>
+<li><strong>HyenaDNA</strong> <a href="https://github.com/HazyResearch/hyena-dna">GitHub Link</a></li>
+<li><strong>Enformer</strong> by Deepmind <a href="https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/">Deepmind Blog</a></li>
+<li><strong>Nucleotide Transformer</strong> <a href="https://www.nature.com/articles/s41592-024-02523-z">Nature Article</a></li>
+<li><strong>Grover</strong> <a href="https://www.nature.com/articles/s42256-024-00872-0">Nature Article</a></li>
 </ol>
 </section>
-<section id="advantages-of-llms-in-genomics" class="slide level2">
-<h2>Advantages of LLMs in Genomics</h2>
+<section id="key-nlp-concepts-for-genomics" class="slide level2">
+<h2>Key NLP Concepts for Genomics</h2>
+<h3 id="tokenization">Tokenization</h3>
 <ul>
-<li><strong>Scalability</strong>: Efficiently process large datasets.<br>
-</li>
-<li><strong>Accuracy</strong>: Capture long-range dependencies in sequences.<br>
-</li>
-<li><strong>Generalization</strong>: Apply across species and contexts.</li>
+<li>Definition: Splitting sequences into smaller components (tokens).</li>
+<li>Examples:
+<ul>
+<li>Text: “The King eats an apple” → [“The”, “King”, “eats”, “an”, “apple”].</li>
+<li>DNA: “ATCGTAGC” → [“ATC”, “GTA”, “GC”].</li>
+</ul></li>
+</ul>
+<h3 id="embedding">Embedding</h3>
+<ul>
+<li>Definition: Transforming tokens into vectors to capture relationships.</li>
+<li>Requires a pre-trained dictionary of tokens/words.</li>
+</ul>
+<p><a href="https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037">More Information</a></p>
+</section>
+<section id="transformers" class="slide level2">
+<h2>Transformers</h2>
+<ul>
+<li><strong>Definition</strong>: Neural network architecture for sequential data.</li>
+<li><strong>Key Features</strong>:
+<ul>
+<li>Self-attention mechanism.</li>
+<li>Parallelized processing.</li>
+<li>Captures long-range dependencies.</li>
+</ul></li>
+</ul>
+<h3 id="applications-in-dna">Applications in DNA</h3>
+<ul>
+<li>Identifying long-distance genomic interactions (e.g., enhancer-promoter connections).</li>
 </ul>
 </section>
-<section id="future-directions" class="slide level2">
-<h2>Future Directions</h2>
+<section id="masked-language-modeling-mlm" class="slide level2">
+<h2>Masked Language Modeling (MLM)</h2>
 <ul>
-<li>Integration of <strong>multi-omics data</strong> (DNA, RNA, protein).<br>
-</li>
-<li>Personalized medicine through genomic analysis.<br>
-</li>
-<li>Multimodal models combining DNA, RNA, and structural data.</li>
+<li><strong>Definition</strong>: Predicting masked tokens based on context.</li>
+<li><strong>Advantages</strong>: Enhances understanding of sequence relationships.</li>
+</ul>
+<h3 id="fine-tuning">Fine-Tuning</h3>
+<ul>
+<li>Adapts pre-trained models for specific tasks.</li>
+<li>Reduces computational costs and training time.</li>
 </ul>
 </section>
-<section id="conclusion" class="slide level2">
-<h2>Conclusion</h2>
-<p>LLMs provide a powerful framework for advancing DNA comprehension, bridging the gap between sequence data and functional insights.</p>
+<section id="comparative-analysis-of-models" class="slide level2">
+<h2>Comparative Analysis of Models</h2>
+<h3 id="grover">Grover</h3>
+<ul>
+<li><strong>Training Details</strong>:
+<ul>
+<li>Exclusively trained on the human genome.</li>
+<li>Byte Pair Encoding (BPE) for vocabulary.</li>
+</ul></li>
+<li><strong>Tasks</strong>:
+<ul>
+<li>Genome element identification.</li>
+<li>Protein-DNA binding prediction.</li>
+</ul></li>
+<li><strong>Performance</strong>:
+<ul>
+<li>2% accuracy in next 6-mers prediction.</li>
+</ul></li>
+</ul>
+<h3 id="nucleotide-transformer">Nucleotide Transformer</h3>
+<ul>
+<li><strong>Training Details</strong>:
+<ul>
+<li>Pre-trained on human and species-diverse genomes.</li>
+<li>250M parameters.</li>
+</ul></li>
+<li><strong>Tasks</strong>:
+<ul>
+<li>Molecular phenotype prediction.</li>
+<li>Genetic variant prioritization.</li>
+</ul></li>
+<li><strong>Outcomes</strong>:
+<ul>
+<li>High accuracy and robust performance.</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
 
 </section>
     </div>

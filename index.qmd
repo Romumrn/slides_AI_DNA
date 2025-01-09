@@ -1,66 +1,115 @@
 ---
-title: "AIxDNA"
+title: "AI and DNA: An Overview"
+author: "Generated Presentation"
 format: revealjs
-author: "Romuald Marin"
-date: "2025-01-07"
----
-## Introduction
-
-- AI, especially **Large Language Models (LLMs)**, is revolutionizing DNA studies.
-- By treating DNA as a language, LLMs analyze and interpret complex genomic information.
-
 ---
 
-## Key Applications
+## Brief Overview
 
-::: incremental
-- **Sequence Analysis**  
-   - Predict nucleotide sequences and structural motifs.  
-   - _Examples_: DNABERT, GROVER.
+Artificial Intelligence (focused on Large Language Models, LLMs) in DNA comprehension.
 
-- **Gene Function Prediction**  
-   - Identify promoters, enhancers, and regulatory elements.  
-   - _Example_: Nucleotide Transformer.
+### AI Generated Visual
 
-- **Variant Impact Assessment**  
-   - Analyze effects of genetic mutations.  
-   - _Example_: Evo.
-
-- **Synthetic Biology**  
-   - Design genetic elements and genomes.  
-   - _Examples_: CodonGAN, Evo.
-::: 
----
-
-## How LLMs Work in DNA
-
-1. **Tokenization**  
-   - DNA segmented into k-mers (like words in NLP).  
-
-2. **Pretraining**  
-   - Models learn patterns from vast genomic datasets.  
-
-3. **Fine-tuning**  
-   - Adapt for tasks like mutation prediction or classification.
+::: {.text-center}
+![Blablabla](img/DALL-E-2024-12-19-13.30.png){width=70%}
+:::
 
 ---
 
-## Advantages of LLMs in Genomics
+## General Context
 
-- **Scalability**: Efficiently process large datasets.  
-- **Accuracy**: Capture long-range dependencies in sequences.  
-- **Generalization**: Apply across species and contexts.
+- **Large Language Models (LLMs)**:
+  - Deep learning models trained on sequential data.
+  - Ideal for natural language processing due to their context-aware predictions.
+
+- **Application to DNA**:
+  - DNA sequences can be treated as a "language."
+  - Nucleotides (A, T, C, G) form the "alphabet."
+  - LLMs analyze patterns in genomic data.
+
+### Applications in Genomics
+- Identifying enhancer-promoter interactions.
+- Predicting roles of genomic regions.
+- Analyzing mutation impacts.
+- Comparing genomic sequences across species.
 
 ---
 
-## Future Directions
+## List of Available Models
 
-- Integration of **multi-omics data** (DNA, RNA, protein).  
-- Personalized medicine through genomic analysis.  
-- Multimodal models combining DNA, RNA, and structural data.
+1. **DNABERT-2**
+   [GitHub Link](https://github.com/MAGICS-LAB/DNABERT_2)
+2. **HyenaDNA**
+   [GitHub Link](https://github.com/HazyResearch/hyena-dna)
+3. **Enformer** by Deepmind
+   [Deepmind Blog](https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/)
+4. **Nucleotide Transformer**
+   [Nature Article](https://www.nature.com/articles/s41592-024-02523-z)
+5. **Grover**
+   [Nature Article](https://www.nature.com/articles/s42256-024-00872-0)
 
 ---
 
-## Conclusion
+## Key NLP Concepts for Genomics
 
-LLMs provide a powerful framework for advancing DNA comprehension, bridging the gap between sequence data and functional insights.
+### Tokenization
+- Definition: Splitting sequences into smaller components (tokens).
+- Examples:
+  - Text: "The King eats an apple" → ["The", "King", "eats", "an", "apple"].
+  - DNA: "ATCGTAGC" → ["ATC", "GTA", "GC"].
+
+### Embedding
+- Definition: Transforming tokens into vectors to capture relationships.
+- Requires a pre-trained dictionary of tokens/words.
+
+[More Information](https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037)
+
+---
+
+## Transformers
+
+- **Definition**: Neural network architecture for sequential data.
+- **Key Features**:
+  - Self-attention mechanism.
+  - Parallelized processing.
+  - Captures long-range dependencies.
+
+### Applications in DNA
+- Identifying long-distance genomic interactions (e.g., enhancer-promoter connections).
+
+---
+
+## Masked Language Modeling (MLM)
+
+- **Definition**: Predicting masked tokens based on context.
+- **Advantages**: Enhances understanding of sequence relationships.
+
+### Fine-Tuning
+- Adapts pre-trained models for specific tasks.
+- Reduces computational costs and training time.
+
+---
+
+## Comparative Analysis of Models
+
+### Grover
+- **Training Details**:
+  - Exclusively trained on the human genome.
+  - Byte Pair Encoding (BPE) for vocabulary.
+- **Tasks**:
+  - Genome element identification.
+  - Protein-DNA binding prediction.
+- **Performance**:
+  - 2% accuracy in next 6-mers prediction.
+
+### Nucleotide Transformer
+- **Training Details**:
+  - Pre-trained on human and species-diverse genomes.
+  - 250M parameters.
+- **Tasks**:
+  - Molecular phenotype prediction.
+  - Genetic variant prioritization.
+- **Outcomes**:
+  - High accuracy and robust performance.
+
+---
