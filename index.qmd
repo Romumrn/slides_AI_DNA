@@ -2,41 +2,87 @@
 title: "AI Applications in DNA Comprehension"
 author: "Romuald Marin"
 date: "2025-01-10"
-format: revealjs
+format:
+  revealjs:
+    smaller: true
+    scrollable: true
+title-slide-attributes:
+    data-background-image: img/DALLE-2024-12-19-13.30.png
+    data-background-size: contain
+    data-background-opacity: "0.5"
+
 ---
 ## AI x DNA
 ### Brief overview of the Artificial Intelligence in DNA Comprehension
 
-Romuald Marin
+![AI Generated image (Dall.e2)](img/DALLE-2024-12-19-13.30.png){fig-alt="oupsi " width=50%}
 
-![AI Generated image (Dalle2)](img/DALLE-2024-12-19-13.30.png){fig-alt="oupsi "}
+
+::: aside
+![https://romumrn.github.io/slides_AI_DNA/](https://romumrn.github.io/slides_AI_DNA/)
+
+:::
 ---
 
-## General context
+## General context {.smaller}
 
 **Large Language Models** (LLM) are deep learning models trained to process and understand vast amounts of sequential data, perfect for the natural language processing (NLP) because it can « guess » the interaction bewteen words and guess the context and the meaning of a sentence or a groupe of sentences.
 
 **Application to DNA context** : DNA sequences can be treated as a « language » where the four nucleotides (A, T, C, G) form the « alphabet, » enabling LLMs to analyze complex patterns and structures in genomic data.
 
----
-
-## General context
-
-### Key Applications 
-- **Sequence analysis**: Predict nucleotide sequences and structural motifs. 
-   - Examples : DNABERT, GROVER.
-- Gene Function Prediction : Identify promoters, enhancers, and other regulatory elements. 
-   - Example : Nucleotide Transformer.
-- Variant Impact Assessment : Analyze the effects of genetic mutations on gene expression and fitness. 
-   - Example : Evo.
-- Synthetic Biology : Design novel genetic elements and entire genomes. 
-   - Example : CodonGAN, Evo.
 
 ![some random txt to explain where this image comes from](img/DNA_strands.png){fig-alt="oupsi "}
 
 ---
 
-## Key Concepts in NLP
+## General context {.smaller}
+
+::: {.columns}
+::: {.column width="80%"}
+### Key Applications
+**Sequence Analysis**: Predict nucleotide sequences and structural motifs.  
+:::
+
+::: {.column width="20%"}
+### Models
+[DNABERT](https://github.com/MAGICS-LAB/DNABERT_2)
+[GROVER](https://huggingface.co/PoetschLab/GROVER)  
+:::
+:::
+
+::: {.columns}
+::: {.column width="80%"}
+**Gene Function Prediction**: Identify promoters, enhancers, and other regulatory elements.  
+:::
+
+::: {.column width="20%"}
+[Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
+:::
+:::
+
+::: {.columns}
+::: {.column width="80%"}
+**Variant Impact Assessment**: Analyze the effects of genetic mutations on gene expression and fitness.  
+:::
+
+::: {.column width="20%"} 
+[Evo](https://github.com/evo-design/evo)  
+:::
+:::
+
+::: {.columns}
+::: {.column width="80%"}
+**Synthetic Biology**: Design novel genetic elements and entire genomes.  
+:::
+
+::: {.column width="20%"} 
+[??????](https://example.com/CodonGAN) 
+:::
+:::
+
+---
+
+## Key Concepts in NLP {.smaller}
 
 ### Token
 - **Definition**: Transforming a sequence into a list of smaller components called "tokens."
@@ -46,7 +92,7 @@ Romuald Marin
 
 ---
 
-## Key Concepts in NLP
+## Key Concepts in NLP {.smaller}
 
 ### Embedding 
 #### Definition
@@ -61,7 +107,7 @@ More information: [Medium article on tokens, vectors, and embeddings](https://me
 
 ---
 
-## Key Concepts in NLP
+## Key Concepts in NLP {.smaller}
 
 ### Transformers
 
@@ -84,7 +130,7 @@ https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders
 
 ---
 
-## Key Concepts in NLP
+## Key Concepts in NLP {.smaller}
 
 ### Masked Language Modeling (MLM)
 
@@ -96,7 +142,7 @@ https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders
 
 ---
 
-## Key Concepts in NLP
+## Key Concepts in NLP {.smaller}
 
 ### Fine-Tuning
 - **Definition**: Adapting a pre-trained model to a specific task by training it further on a smaller, task-specific dataset.
@@ -108,27 +154,24 @@ From : Nucleotide Transformer: building and evaluating robust foundation models
 
 ![Image placeholder](path/to/image)
 
----
-
 ## Current progress 
 
 ### A wide range of tools
 
 #### A non-exhaustive list of models already trained : 
 
-- DNABERT-2 (https://github.com/MAGICS-LAB/DNABERT_2) 
-- HyenaDNA (https://github.com/HazyResearch/hyena-dna) 
-- Enformer by Deepmind (https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/)
-- Nucleotide Transformer (https://www.nature.com/articles/s41592-024-02523-z)
-- Grover (https://www.nature.com/articles/s42256-024-00872-0)
+- [DNABERT-2](https://github.com/MAGICS-LAB/DNABERT_2) 
+- [HyenaDNA](https://github.com/HazyResearch/hyena-dna) 
+- [Enformer by Deepmind](https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/)
+- [Nucleotide Transformer](https://www.nature.com/articles/s41592-024-02523-z)
+- [Grover](https://www.nature.com/articles/s42256-024-00872-0)
 
----
-
+--- 
 ## Current progress 
 
 
 ### Multitask Nature
-AI models for DNA are designed to handle a wide range of genomic tasks, including :
+#####AI models for DNA are designed to handle a wide range of genomic tasks, including :
 - Sequence Prediction : Predicting nucleotide sequences (GROVER).
 - Gene Expression : Modeling long-range interactions (Nucleotide Transformer).
 - Mutation Analysis : Predicting fitness impacts of mutations (Evo).
@@ -140,7 +183,7 @@ AI models for DNA are designed to handle a wide range of genomic tasks, includin
 
 
 ### Multiparadigm Approach
-These models integrate various paradigms to maximize performance :
+#####These models integrate various paradigms to maximize performance :
 - **Foundation Models** : Pre-trained on massive datasets and fine-tuned for specific tasks (Nucleotide Transformer).
 - **Generative Models** : Create novel genomic or functional elements (Evo for synthetic CRISPR systems).
 - **Supervised Models** : Use labeled data for targeted functional predictions (LucaProt for protein-DNA interactions).
@@ -160,11 +203,11 @@ The training datasets for these models can vary depending on the application:
 
 ## Grover
 
-Focus: Understanding DNA grammar and sequence structure.
-Application: Predicting genome elements like promoters and enhancers.
-Data: Exclusively human genome.
+**Focus**: Understanding DNA grammar and sequence structure.
+**Application**: Predicting genome elements like promoters and enhancers.
+**Data**: Exclusively human genome.
 
-Details : 
+####Details: 
 - Training Details:
   - **Data Used**: Exclusively trained on the human genome sequence.
 - Model Architecture:

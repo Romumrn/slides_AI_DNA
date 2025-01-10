@@ -46,6 +46,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -127,7 +128,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="img/DALLE-2024-12-19-13.30.png" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">AI Applications in DNA Comprehension</h1>
 
 <div class="quarto-title-authors">
@@ -143,38 +144,57 @@ Romuald Marin
 <section id="ai-x-dna" class="slide level2">
 <h2>AI x DNA</h2>
 <h3 id="brief-overview-of-the-artificial-intelligence-in-dna-comprehension">Brief overview of the Artificial Intelligence in DNA Comprehension</h3>
-<p>Romuald Marin</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/DALLE-2024-12-19-13.30.png" style="width:50.0%" alt="oupsi "></p>
+<figcaption>AI Generated image (Dall.e2)</figcaption>
+</figure>
+</div>
 
-<img data-src="img/DALLE-2024-12-19-13.30.png" alt="oupsi " class="r-stretch quarto-figure-center"><p class="caption">AI Generated image (Dalle2)</p></section>
-<section id="general-context" class="slide level2">
+<aside><div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://romumrn.github.io/slides_AI_DNA/.png"></p>
+<figcaption>https://romumrn.github.io/slides_AI_DNA/</figcaption>
+</figure>
+</div>
+</div></aside></section>
+<section id="general-context" class="slide level2 smaller">
 <h2>General context</h2>
 <p><strong>Large Language Models</strong> (LLM) are deep learning models trained to process and understand vast amounts of sequential data, perfect for the natural language processing (NLP) because it can «&nbsp;guess&nbsp;» the interaction bewteen words and guess the context and the meaning of a sentence or a groupe of sentences.</p>
 <p><strong>Application to DNA context</strong>&nbsp;: DNA sequences can be treated as a «&nbsp;language&nbsp;» where the four nucleotides (A, T, C, G) form the «&nbsp;alphabet,&nbsp;» enabling LLMs to analyze complex patterns and structures in genomic data.</p>
-</section>
-<section id="general-context-1" class="slide level2">
-<h2>General context</h2>
-<h3 id="key-applications">Key Applications</h3>
-<ul>
-<li><strong>Sequence analysis</strong>: Predict nucleotide sequences and structural motifs.
-<ul>
-<li>Examples&nbsp;: DNABERT, GROVER.</li>
-</ul></li>
-<li>Gene Function Prediction&nbsp;: Identify promoters, enhancers, and other regulatory elements.
-<ul>
-<li>Example&nbsp;: Nucleotide Transformer.</li>
-</ul></li>
-<li>Variant Impact Assessment&nbsp;: Analyze the effects of genetic mutations on gene expression and fitness.
-<ul>
-<li>Example&nbsp;: Evo.</li>
-</ul></li>
-<li>Synthetic Biology&nbsp;: Design novel genetic elements and entire genomes.
-<ul>
-<li>Example&nbsp;: CodonGAN, Evo.</li>
-</ul></li>
-</ul>
 
 <img data-src="img/DNA_strands.png" alt="oupsi " class="r-stretch quarto-figure-center"><p class="caption">some random txt to explain where this image comes from</p></section>
-<section id="key-concepts-in-nlp" class="slide level2">
+<section id="general-context-1" class="slide level2 smaller">
+<h2>General context</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<h3 id="key-applications">Key Applications</h3>
+<p><strong>Sequence Analysis</strong>: Predict nucleotide sequences and structural motifs.</p>
+</div><div class="column" style="width:20%;">
+<h3 id="models">Models</h3>
+<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT</a> <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><strong>Gene Function Prediction</strong>: Identify promoters, enhancers, and other regulatory elements.</p>
+</div><div class="column" style="width:20%;">
+<p><a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformer</a></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><strong>Variant Impact Assessment</strong>: Analyze the effects of genetic mutations on gene expression and fitness.</p>
+</div><div class="column" style="width:20%;">
+<p><a href="https://github.com/evo-design/evo">Evo</a></p>
+</div></div>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><strong>Synthetic Biology</strong>: Design novel genetic elements and entire genomes.</p>
+</div><div class="column" style="width:20%;">
+<p><a href="https://example.com/CodonGAN">??????</a></p>
+</div></div>
+</section>
+<section id="key-concepts-in-nlp" class="slide level2 smaller">
 <h2>Key Concepts in NLP</h2>
 <h3 id="token">Token</h3>
 <ul>
@@ -188,7 +208,7 @@ Romuald Marin
 </ul></li>
 </ul>
 </section>
-<section id="key-concepts-in-nlp-1" class="slide level2">
+<section id="key-concepts-in-nlp-1" class="slide level2 smaller">
 <h2>Key Concepts in NLP</h2>
 <h3 id="embedding">Embedding</h3>
 <h4 id="definition">Definition</h4>
@@ -196,7 +216,7 @@ Romuald Marin
 <p>More information: <a href="https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037">Medium article on tokens, vectors, and embeddings</a></p>
 
 <img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Image placeholder</p></section>
-<section id="key-concepts-in-nlp-2" class="slide level2">
+<section id="key-concepts-in-nlp-2" class="slide level2 smaller">
 <h2>Key Concepts in NLP</h2>
 <h3 id="transformers">Transformers</h3>
 <ul>
@@ -212,7 +232,7 @@ Romuald Marin
 <p>https://medium.com/<span class="citation" data-cites="ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b">@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b</span></p>
 
 <img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Image placeholder</p></section>
-<section id="key-concepts-in-nlp-3" class="slide level2">
+<section id="key-concepts-in-nlp-3" class="slide level2 smaller">
 <h2>Key Concepts in NLP</h2>
 <h3 id="masked-language-modeling-mlm">Masked Language Modeling (MLM)</h3>
 <ul>
@@ -221,7 +241,7 @@ Romuald Marin
 <li><p><strong>Application in DNA</strong>: Enables models to infer missing or obscured nucleotide sequences and learn patterns in genomic data.</p></li>
 </ul>
 </section>
-<section id="key-concepts-in-nlp-4" class="slide level2">
+<section id="key-concepts-in-nlp-4" class="slide level2 smaller">
 <h2>Key Concepts in NLP</h2>
 <h3 id="fine-tuning">Fine-Tuning</h3>
 <ul>
@@ -238,24 +258,32 @@ Romuald Marin
 <h3 id="a-wide-range-of-tools">A wide range of tools</h3>
 <h4 id="a-non-exhaustive-list-of-models-already-trained">A non-exhaustive list of models already trained&nbsp;:</h4>
 <ul>
-<li>DNABERT-2 (https://github.com/MAGICS-LAB/DNABERT_2)</li>
-<li>HyenaDNA (https://github.com/HazyResearch/hyena-dna)</li>
-<li>Enformer by Deepmind (https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/)</li>
-<li>Nucleotide Transformer (https://www.nature.com/articles/s41592-024-02523-z)</li>
-<li>Grover (https://www.nature.com/articles/s42256-024-00872-0)</li>
+<li><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT-2</a></li>
+<li><a href="https://github.com/HazyResearch/hyena-dna">HyenaDNA</a></li>
+<li><a href="https://deepmind.google/discover/blog/predicting-gene-expression-with-ai/">Enformer by Deepmind</a></li>
+<li><a href="https://www.nature.com/articles/s41592-024-02523-z">Nucleotide Transformer</a></li>
+<li><a href="https://www.nature.com/articles/s42256-024-00872-0">Grover</a></li>
 </ul>
+<table class="caption-top" style="width:7%;">
+<colgroup>
+<col style="width: 6%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>## Current progress</td>
+</tr>
+<tr class="even">
+<td>### Multitask Nature #####AI models for DNA are designed to handle a wide range of genomic tasks, including&nbsp;: - Sequence Prediction&nbsp;: Predicting nucleotide sequences (GROVER). - Gene Expression&nbsp;: Modeling long-range interactions (Nucleotide Transformer). - Mutation Analysis&nbsp;: Predicting fitness impacts of mutations (Evo). - Functional Annotation&nbsp;: Identifying promoters, enhancers, or protein-binding sites.</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="current-progress-1" class="slide level2">
 <h2>Current progress</h2>
-<h3 id="multitask-nature">Multitask Nature</h3>
-<p>AI models for DNA are designed to handle a wide range of genomic tasks, including&nbsp;: - Sequence Prediction&nbsp;: Predicting nucleotide sequences (GROVER). - Gene Expression&nbsp;: Modeling long-range interactions (Nucleotide Transformer). - Mutation Analysis&nbsp;: Predicting fitness impacts of mutations (Evo). - Functional Annotation&nbsp;: Identifying promoters, enhancers, or protein-binding sites.</p>
+<h3 id="multiparadigm-approach">Multiparadigm Approach</h3>
+<p>#####These models integrate various paradigms to maximize performance&nbsp;: - <strong>Foundation Models</strong>&nbsp;: Pre-trained on massive datasets and fine-tuned for specific tasks (Nucleotide Transformer). - <strong>Generative Models</strong>&nbsp;: Create novel genomic or functional elements (Evo for synthetic CRISPR systems). - <strong>Supervised Models</strong>&nbsp;: Use labeled data for targeted functional predictions (LucaProt for protein-DNA interactions).</p>
 </section>
 <section id="current-progress-2" class="slide level2">
-<h2>Current progress</h2>
-<h3 id="multiparadigm-approach">Multiparadigm Approach</h3>
-<p>These models integrate various paradigms to maximize performance&nbsp;: - <strong>Foundation Models</strong>&nbsp;: Pre-trained on massive datasets and fine-tuned for specific tasks (Nucleotide Transformer). - <strong>Generative Models</strong>&nbsp;: Create novel genomic or functional elements (Evo for synthetic CRISPR systems). - <strong>Supervised Models</strong>&nbsp;: Use labeled data for targeted functional predictions (LucaProt for protein-DNA interactions).</p>
-</section>
-<section id="current-progress-3" class="slide level2">
 <h2>Current progress</h2>
 <h3 id="training-data">Training data</h3>
 <p>The training datasets for these models can vary depending on the application: - Human Genome only or Multi-Species (eukaryotes or prokaryotes)</p>
@@ -263,8 +291,8 @@ Romuald Marin
 <img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Image placeholder</p></section>
 <section id="grover" class="slide level2">
 <h2>Grover</h2>
-<p>Focus: Understanding DNA grammar and sequence structure. Application: Predicting genome elements like promoters and enhancers. Data: Exclusively human genome.</p>
-<p>Details&nbsp;: - Training Details: - <strong>Data Used</strong>: Exclusively trained on the human genome sequence. - Model Architecture: - Byte Pair Encoding (BPE)&nbsp;: Established a vocabulary tailored for genomic sequences. - Model Size&nbsp;: not disclosed. - Approach&nbsp;: - <strong>Next-k-mer Prediction</strong>&nbsp;: Custom task to select optimal vocabulary with BPE. - Validation &amp; Testing: - Genome Element Identification&nbsp;: Identifying promoters, enhancers, and other genomic elements. - Protein–DNA Binding Prediction&nbsp;: Assessing binding affinities between proteins and DNA sequences. - Performance: - Accuracy&nbsp;: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences. - Comparison&nbsp;: Outperformed other models in genome biology tasks. - Context Learning&nbsp;: Modeled sequence context and structural nuances within the human genome.</p>
+<p><strong>Focus</strong>: Understanding DNA grammar and sequence structure. <strong>Application</strong>: Predicting genome elements like promoters and enhancers. <strong>Data</strong>: Exclusively human genome.</p>
+<p>####Details: - Training Details: - <strong>Data Used</strong>: Exclusively trained on the human genome sequence. - Model Architecture: - Byte Pair Encoding (BPE)&nbsp;: Established a vocabulary tailored for genomic sequences. - Model Size&nbsp;: not disclosed. - Approach&nbsp;: - <strong>Next-k-mer Prediction</strong>&nbsp;: Custom task to select optimal vocabulary with BPE. - Validation &amp; Testing: - Genome Element Identification&nbsp;: Identifying promoters, enhancers, and other genomic elements. - Protein–DNA Binding Prediction&nbsp;: Assessing binding affinities between proteins and DNA sequences. - Performance: - Accuracy&nbsp;: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences. - Comparison&nbsp;: Outperformed other models in genome biology tasks. - Context Learning&nbsp;: Modeled sequence context and structural nuances within the human genome.</p>
 
 <img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Image placeholder</p></section>
 <section id="nucleotide-transformer" class="slide level2">
@@ -322,7 +350,7 @@ Romuald Marin
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'smaller': false,
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
