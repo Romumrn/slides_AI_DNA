@@ -30,9 +30,6 @@ jobs:
         run: |
           git config --local user.name "Romuald MARIN"
           git config --local user.email "romuald.marin@france-bioinformatique.fr"
-
-      - name: Clone GitLab repo and sync
-        run: |
           git clone git@gitlab.in2p3.fr:ifb-biosphere/wp4-mudis4ls/slides_ai_dna.git
           cd slides_ai_dna
           git remote add slides_AI_DNA https://github.com/Romumrn/slides_AI_DNA.git
