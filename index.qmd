@@ -12,11 +12,18 @@ title-slide-attributes:
     data-background-size: contain
     data-background-opacity: "0.5"
 footer: https://romumrn.github.io/slides_AI_DNA/
+
 ---
+
+<style type="text/css">
+p { text-align: justify; }
+</style>
+
 ## Introduction: AI x DNA
 
 **Artificial intelligence** is used in many different fields and is now being applied to the complex domain of **DNA comprehension**. By leveraging advanced **machine learning models**, researchers can analyze vast volumes of **genomic data** with unparalleled precision and speed. 
 AI makes it possible to identify patterns and relationships in DNA sequences that were previously inaccessible, driving significant advancements in understanding gene expression, mutations, and regulatory elements. These new methods pave the way for innovations that have the potential to transform biological research and healthcare. Below is a brief (non-exhaustive) overview of these advancements.
+
 ---
 
 ## General context 
