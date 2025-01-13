@@ -31,18 +31,27 @@ jobs:
           git config --global user.name "Romuald MARIN"
           git config --global user.email "romuald.marin@france-bioinformatique.fr"
           git clone git@gitlab.in2p3.fr:ifb-biosphere/wp4-mudis4ls/slides_ai_dna.git
-      - name: Merge and Resolve Conflicts
+          
+      # Step 3: Sync with GitLab repository
+      - name: Sync to GitLab repository
         run: |
-          cd slides_ai_dna
-          git merge slides_AI_DNA/main --allow-unrelated-histories || true
-          # Automatically resolve conflicts by keeping the changes from GitHub
-          git checkout --ours README.md
-          git add README.md
-          git commit -m "Resolved merge conflicts automatically"
+          # Clone the GitLab repository
+          git clone git@gitlab.in2p3.fr:ifb-biosphere/wp4-mudis4ls/slides_ai_dna.git gitlab-repo
+          cd gitlab-repo
 
-      - name: Push Changes Back to GitLab
-        run: |
-          cd slides_ai_dna
+          # Add GitHub as a remote and fetch updates
+          git remote add github https://github.com/Romumrn/slides_AI_DNA.git
+          git fetch github
+
+          # Merge changes from GitHub to GitLab
+          git merge github/main --allow-unrelated-histories || true
+
+          # Automatically resolve conflicts by keeping GitHub changes
+          git checkout --theirs .
+          git add .
+          git commit -m "Synced changes from GitHub repository" || echo "No conflicts to resolve"
+
+          # Push changes back to GitLab
           git push origin main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
