@@ -33,7 +33,7 @@ jobs:
         run: |
           git clone git@gitlab.in2p3.fr:ifb-biosphere/wp4-mudis4ls/slides_ai_dna.git
           cd slides_ai_dna
-          git remote add slides_AI_DNA https://github.com/YourWorkspaceName/slides_AI_DNA.git
+          git remote add slides_AI_DNA https://github.com/Romumrn/slides_AI_DNA.git
           git remote update
           git merge slides_AI_DNA/main
           git push origin main
