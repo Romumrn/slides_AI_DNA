@@ -31,11 +31,19 @@ jobs:
           git config --global user.name "Romuald MARIN"
           git config --global user.email "romuald.marin@france-bioinformatique.fr"
           git clone git@gitlab.in2p3.fr:ifb-biosphere/wp4-mudis4ls/slides_ai_dna.git
+      - name: Merge and Resolve Conflicts
+        run: |
           cd slides_ai_dna
-          git remote add slides_AI_DNA https://github.com/Romumrn/slides_AI_DNA.git
-          git fetch slides_AI_DNA
-          git merge slides_AI_DNA/main --allow-unrelated-histories
+          git merge slides_AI_DNA/main --allow-unrelated-histories || true
+          # Automatically resolve conflicts by keeping the changes from GitHub
+          git checkout --ours README.md
+          git add README.md
+          git commit -m "Resolved merge conflicts automatically"
+
+      - name: Push Changes Back to GitLab
+        run: |
+          cd slides_ai_dna
           git push origin main
         env:
-         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
