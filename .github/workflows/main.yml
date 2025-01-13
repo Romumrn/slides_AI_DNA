@@ -22,8 +22,9 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          # Add GitLab's SSH host key to known_hosts to avoid verification failure
           ssh-keyscan gitlab.in2p3.fr >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
       - name: Configure git user
         run: |
