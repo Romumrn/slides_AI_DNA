@@ -40,12 +40,12 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 ## General context 
 
 ::: {.columns}
-::: {.column width="80%"}
+::: {.column width="70%"}
 ### Key Applications
 **Sequence Analysis**: Predict nucleotide sequences and structural motifs.  
 :::
 
-::: {.column width="20%"}
+::: {.column width="30%"}
 ### Models
 [DNABERT](https://github.com/MAGICS-LAB/DNABERT_2)
 [GROVER](https://huggingface.co/PoetschLab/GROVER)  
@@ -53,31 +53,31 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 :::
 
 ::: {.columns}
-::: {.column width="80%"}
+::: {.column width="70%"}
 **Gene Function Prediction**: Identify promoters, enhancers, and other regulatory elements.  
 :::
 
-::: {.column width="20%"}
+::: {.column width="30%"}
 [Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
 :::
 :::
 
 ::: {.columns}
-::: {.column width="80%"}
+::: {.column width="70%"}
 **Variant Impact Assessment**: Analyze the effects of genetic mutations on gene expression and fitness.  
 :::
 
-::: {.column width="20%"} 
+::: {.column width="30%"} 
 [Evo](https://github.com/evo-design/evo)  
 :::
 :::
 
 ::: {.columns}
-::: {.column width="80%"}
+::: {.column width="70%"}
 **Synthetic Biology**: Design novel genetic elements and entire genomes.  
 :::
 
-::: {.column width="20%"} 
+::: {.column width="30%"} 
 [??????](https://example.com/CodonGAN) 
 :::
 :::
