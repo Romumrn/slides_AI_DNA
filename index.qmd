@@ -11,7 +11,7 @@ title-slide-attributes:
     data-background-image: img/DALLE-2024-12-19-13.30.png
     data-background-size: contain
     data-background-opacity: "0.5"
-footer: https://romumrn.github.io/slides_AI_DNA/
+footer: https://github.com/Romumrn/slides_AI_DNA
 
 ---
 
