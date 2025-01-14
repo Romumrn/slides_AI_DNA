@@ -31,6 +31,7 @@
     }
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -141,22 +142,20 @@ Romuald Marin
 
   <p class="date">2025-01-10</p>
 </section>
-<section class="slide level2">
-
-<style type="text/css">
-p { text-align: justify; }
-</style>
-</section>
 <section id="introduction-ai-x-dna" class="slide level2">
 <h2>Introduction: AI x DNA</h2>
+<div class="justify-paragraph">
 <p><strong>Artificial intelligence</strong> is used in many different fields and is now being applied to the complex domain of <strong>DNA comprehension</strong>. By leveraging advanced <strong>machine learning models</strong>, researchers can analyze vast volumes of <strong>genomic data</strong> with unparalleled precision and speed. AI makes it possible to identify patterns and relationships in DNA sequences that were previously inaccessible, driving significant advancements in understanding gene expression, mutations, and regulatory elements. These new methods pave the way for innovations that have the potential to transform biological research and healthcare. Below is a brief (non-exhaustive) overview of these advancements.</p>
+</div>
 </section>
 <section id="general-context" class="slide level2">
 <h2>General context</h2>
+<div class="justify-paragraph">
 <p><strong>Large Language Models</strong> (LLM) are deep learning models trained to process and understand vast amounts of sequential data, perfect for the natural language processing (NLP) because it can «&nbsp;guess&nbsp;» the interaction bewteen words and guess the context and the meaning of a sentence or a groupe of sentences.</p>
 <p><strong>Application to DNA context</strong>&nbsp;: DNA sequences can be treated as a «&nbsp;language&nbsp;» where the four nucleotides (A, T, C, G) form the «&nbsp;alphabet,&nbsp;» enabling LLMs to analyze complex patterns and structures in genomic data.</p>
+</div>
 
-<img data-src="img/DNA_strands.png" alt="DNA strands represenation img" class="r-stretch quarto-figure-center"><p class="caption">DNA strands represenation</p></section>
+<img data-src="img/DNA_strands.png" alt="DNA strands represenation img" class="r-stretch quarto-figure-center"><p class="caption">Fig: DNA strands represenation</p></section>
 <section id="general-context-1" class="slide level2">
 <h2>General context</h2>
 <div class="columns">
@@ -165,7 +164,7 @@ p { text-align: justify; }
 <p><strong>Sequence Analysis</strong>: Predict nucleotide sequences and structural motifs.</p>
 </div><div class="column" style="width:30%;">
 <h3 id="models">Models</h3>
-<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT</a> <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a></p>
+<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT</a>, <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:70%;">
@@ -183,56 +182,56 @@ p { text-align: justify; }
 <div class="column" style="width:70%;">
 <p><strong>Synthetic Biology</strong>: Design novel genetic elements and entire genomes.</p>
 </div><div class="column" style="width:30%;">
-<p><a href="https://example.com/CodonGAN">??????</a></p>
+<p><a href="https://github.com/evo-design/evo">Evo</a></p>
 </div></div>
 </section>
 <section id="key-concepts-in-nlp" class="slide level2">
 <h2>Key Concepts in NLP</h2>
 <h3 id="token">Token</h3>
-<ul>
-<li><strong>Definition</strong>: Transforming a sequence into a list of smaller components called “tokens.”
-<ul>
-<li>Example:
-<ul>
-<li>For text: “The King eats an apple” -&gt; “The”, “King”, “eats”, “an”, “apple”</li>
-<li>For DNA: “ATCGTAGC” -&gt; “ATC”, “GTA”, “GC”</li>
-</ul></li>
-</ul></li>
-</ul>
-
-<img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Add schema</p></section>
+<p><strong>Definition</strong>: Transforming a sequence into a list of smaller components called “tokens.” <strong>Example</strong>: “The King eats an apple” -&gt; “The”, “King”, “eats”, “an”, “apple”</p>
+<p>: “ATCGTAGC” -&gt; “ATC”, “GTA”, “GC”</p>
+<h3 id="embedding">Embedding</h3>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><strong>Definition</strong>: Each token is transformed into a vector that captures its relationships with others. To do this, you define a dictionary which is a list of all the tokens/words in your corpus. <strong>Training</strong>: Requires pre-training on data to infer patterns and relationships.</p>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/embedding.png"></p>
+<figcaption>Fig: Embeding vector</figcaption>
+</figure>
+</div>
+</div></div>
+<div class="footer">
+<p>More information: <a href="https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037">Medium article on tokens, vectors, and embeddings</a></p>
+</div>
+</section>
 <section id="key-concepts-in-nlp-1" class="slide level2">
 <h2>Key Concepts in NLP</h2>
-<h3 id="embedding">Embedding</h3>
-<h4 id="definition">Definition</h4>
-<p>Each token is transformed into a vector that captures its relationships with others. To do this, you define a dictionary which is a list of all the tokens/words in your corpus.</p>
-<h4 id="training">Training</h4>
-<p>Requires pre-training on data to infer patterns and relationships.</p>
-
-<img data-src="path/to/image.png" class="r-stretch quarto-figure-center"><p class="caption">Add schema</p><p>More information: <a href="https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037">Medium article on tokens, vectors, and embeddings</a></p>
-</section>
-<section id="key-concepts-in-nlp-2" class="slide level2">
-<h2>Key Concepts in NLP</h2>
-<div class="columns">
-<div class="column" style="width:80%;">
 <h3 id="transformers">Transformers</h3>
+<div class="columns">
+<div class="column" style="width:70%;">
+<div class="justify-paragraph">
 <ul>
 <li><strong>Definition</strong>: A neural network architecture designed for processing sequential data by focusing on relationships between elements regardless of their distance in the sequence.</li>
 <li><strong>Key Mechanism</strong>: Uses self-attention to weigh the importance of different elements in the sequence.</li>
 <li><strong>Advantages</strong>: Captures long-range dependencies and parallelizes processing for efficiency.</li>
 <li><strong>Application in DNA</strong>: Identifies long-distance interactions in genomic sequences, such as enhancer-promoter connections.</li>
 </ul>
-</div><div class="column" style="width:20%;">
-<p>The king eat an apple</p>
-<p>Decoder</p>
-<p>Encoder</p>
-<p>Le roi mange une banane</p>
+</div>
+</div><div class="column" style="width:30%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/transformer.png"></p>
+<figcaption>Fig: Schema transformer</figcaption>
+</figure>
+</div>
 </div></div>
 <div class="footer">
 <p>More explanation : https://medium.com/<span class="citation" data-cites="ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b">@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b</span></p>
 </div>
 </section>
-<section id="key-concepts-in-nlp-3" class="slide level2">
+<section id="key-concepts-in-nlp-2" class="slide level2">
 <h2>Key Concepts in NLP</h2>
 <h3 id="masked-language-modeling-mlm">Masked Language Modeling (MLM)</h3>
 <ul>
@@ -241,23 +240,23 @@ p { text-align: justify; }
 <li><p><strong>Application in DNA</strong>: Enables models to infer missing or obscured nucleotide sequences and learn patterns in genomic data.</p></li>
 </ul>
 </section>
-<section id="key-concepts-in-nlp-4" class="slide level2">
+<section id="key-concepts-in-nlp-3" class="slide level2">
 <h2>Key Concepts in NLP</h2>
 <h3 id="fine-tuning">Fine-Tuning</h3>
+<div class="justify-paragraph">
 <ul>
 <li><strong>Definition</strong>: Adapting a pre-trained model to a specific task by training it further on a smaller, task-specific dataset.</li>
 <li><strong>Process</strong>: Retains the general knowledge learned during pre-training while tailoring the model to specialized data.</li>
 <li><strong>Advantages</strong>: Reduces computational costs and training time while improving task-specific performance.</li>
 <li><strong>Application in DNA</strong>: Enables models like the Nucleotide Transformer to specialize in tasks such as variant effect prediction or functional annotation.</li>
 </ul>
-
-<img data-src="images/nucleotide-transformer.png" class="r-stretch quarto-figure-center"><p class="caption">Nucleotide Transformer</p></section>
+</div>
+<p><img data-src="img/training.png" class="quarto-figure quarto-figure-center" alt="Fig: Nucleotide Transformer"> From&nbsp;: Nucleotide Transformer: building and evaluating robust foundation models for human genomics https://www.nature.com/articles/s41592-024-02523-z</p>
+</section>
 <section id="various-types-of-models" class="slide level2">
-<h2>Various Types of Models</h2>
-<div class="columns">
-<div class="column" style="width:30%;">
+<h2>Various types of Models</h2>
 <h3 id="multitask-nature"><strong>Multitask Nature</strong>:</h3>
-<h4 id="ai-models-for-dna-are-designed-to-handle-a-wide-range-of-genomic-tasks-including">AI models for DNA are designed to handle a wide range of genomic tasks, including:</h4>
+<h5 id="ai-models-for-dna-are-designed-to-handle-a-wide-range-of-genomic-tasks-including">AI models for DNA are designed to handle a wide range of genomic tasks, including:</h5>
 <ul>
 <li><strong>Sequence Prediction</strong>: Predicting nucleotide sequences (e.g., GROVER).<br>
 </li>
@@ -267,7 +266,16 @@ p { text-align: justify; }
 </li>
 <li><strong>Functional Annotation</strong>: Identifying promoters, enhancers, or protein-binding sites.</li>
 </ul>
-</div><div class="column" style="width:30%;">
+<h3 id="training-data"><strong>Training Data</strong>:</h3>
+<h4 id="the-datasets-used-vary-significantly-depending-on-the-application">The datasets used vary significantly depending on the application:</h4>
+<ul>
+<li>Human genome</li>
+<li>Multi-species datasets (eukaryotes or prokaryotes)</li>
+<li>Mix</li>
+</ul>
+</section>
+<section id="various-types-of-models-1" class="slide level2">
+<h2>Various types of Models</h2>
 <h3 id="multiparadigm-approach"><strong>Multiparadigm Approach</strong></h3>
 <h4 id="these-models-integrate-various-paradigms-to-maximize-performance">These models integrate various paradigms to maximize performance:</h4>
 <ul>
@@ -277,21 +285,13 @@ p { text-align: justify; }
 </li>
 <li><strong>Supervised Models</strong>: Use labeled data for targeted functional predictions (e.g., LucaProt for protein-DNA interactions).</li>
 </ul>
-</div><div class="column" style="width:30%;">
-<h3 id="training-data"><strong>Training Data</strong>:</h3>
-<h4 id="the-datasets-used-vary-significantly-depending-on-the-application">The datasets used vary significantly depending on the application:</h4>
-<ul>
-<li>Human genome or multi-species datasets (eukaryotes or prokaryotes).</li>
-<li>Other specialized datasets as needed.</li>
-</ul>
-</div></div>
 </section>
 <section id="grover" class="slide level2">
 <h2>Grover</h2>
 <p><strong>Focus</strong>: Understanding DNA grammar and sequence structure.<br>
 <strong>Application</strong>: Predicting genome elements like promoters and enhancers.<br>
 <strong>Data</strong>: Exclusively human genome.</p>
-<h3 id="details">Details:</h3>
+<h4 id="details">Details:</h4>
 <ul>
 <li><strong>Training Details</strong>:
 <ul>
@@ -431,7 +431,8 @@ p { text-align: justify; }
 <p><strong>Focus</strong>: Protein function prediction using sequence and structure integration.<br>
 <strong>Application</strong>: Functional annotation and discovery of viral proteins.<br>
 <strong>Data</strong>: Protein sequences and structural information.</p>
-<h4 id="details-3">Details:</h4>
+<section id="details-3" class="very-small-text">
+<h4>Details:</h4>
 <ul>
 <li><strong>Training Details</strong>:
 <ul>
@@ -475,9 +476,11 @@ p { text-align: justify; }
 </li>
 <li>Supervised learning: Trained on labeled datasets with known protein functions to learn accurate mappings.<br>
 </li>
-<li>Model optimization: Employed advanced techniques to fine-tune parameters for improved performance.</li>
+<li>Model optimization: Employed advanced techniques to fine-tune parameters for improved performance.<br>
+</li>
 </ul></li>
 </ul>
+</section>
 </section>
 <section class="slide level2">
 

@@ -2,6 +2,7 @@
 title: "Brief overview of the Artificial Intelligence in DNA Comprehension"
 author: "Romuald Marin"
 date: "2025-01-10"
+css: styles.css
 format:
   revealjs:
     smaller: true
@@ -15,25 +16,27 @@ footer: https://github.com/Romumrn/slides_AI_DNA
 
 ---
 
-<style type="text/css">
-p { text-align: justify; }
-</style>
 
 ## Introduction: AI x DNA
 
+<div class="justify-paragraph">
+
 **Artificial intelligence** is used in many different fields and is now being applied to the complex domain of **DNA comprehension**. By leveraging advanced **machine learning models**, researchers can analyze vast volumes of **genomic data** with unparalleled precision and speed. 
 AI makes it possible to identify patterns and relationships in DNA sequences that were previously inaccessible, driving significant advancements in understanding gene expression, mutations, and regulatory elements. These new methods pave the way for innovations that have the potential to transform biological research and healthcare. Below is a brief (non-exhaustive) overview of these advancements.
+
+</div>
 
 ---
 
 ## General context 
 
+<div class="justify-paragraph">
 **Large Language Models** (LLM) are deep learning models trained to process and understand vast amounts of sequential data, perfect for the natural language processing (NLP) because it can « guess » the interaction bewteen words and guess the context and the meaning of a sentence or a groupe of sentences.
 
 **Application to DNA context** : DNA sequences can be treated as a « language » where the four nucleotides (A, T, C, G) form the « alphabet, » enabling LLMs to analyze complex patterns and structures in genomic data.
+</div>
 
-
-![DNA strands represenation](img/DNA_strands.png){fig-alt="DNA strands represenation img"}
+![Fig: DNA strands represenation](img/DNA_strands.png){fig-alt="DNA strands represenation img" fig-align="center"}
 
 ---
 
@@ -47,7 +50,7 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 
 ::: {.column width="30%"}
 ### Models
-[DNABERT](https://github.com/MAGICS-LAB/DNABERT_2)
+[DNABERT](https://github.com/MAGICS-LAB/DNABERT_2),
 [GROVER](https://huggingface.co/PoetschLab/GROVER)  
 :::
 :::
@@ -78,7 +81,7 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 :::
 
 ::: {.column width="30%"} 
-[??????](https://example.com/CodonGAN) 
+[Evo](https://github.com/evo-design/evo)  
 :::
 :::
 
@@ -87,57 +90,50 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 ## Key Concepts in NLP 
 
 ### Token 
-- **Definition**: Transforming a sequence into a list of smaller components called "tokens."
-   - Example: 
-     - For text: "The King eats an apple" -> "The", "King", "eats", "an", "apple"
-     - For DNA: "ATCGTAGC" -> "ATC", "GTA", "GC"
+**Definition**: Transforming a sequence into a list of smaller components called "tokens."
+**Example**: 
+"The King eats an apple" -> "The", "King", "eats", "an", "apple"
 
-![Add schema](path/to/image)
-
----
-
-## Key Concepts in NLP 
+: "ATCGTAGC" -> "ATC", "GTA", "GC"
 
 ### Embedding 
-
-#### Definition
-Each token is transformed into a vector that captures its relationships with others.
+::: {.columns}
+::: {.column width="60%"}
+**Definition**: Each token is transformed into a vector that captures its relationships with others.
 To do this, you define a dictionary which is a list of all the tokens/words in your corpus.
+**Training**: Requires pre-training on data to infer patterns and relationships.
+:::
 
-#### Training
-Requires pre-training on data to infer patterns and relationships.
+::: {.column width="40%"}
+![Fig: Embeding vector](/img/embedding.png){fig-align="center"}
+:::
+:::
 
-
-![Add schema](path/to/image)
-
-
+::: footer
 More information: [Medium article on tokens, vectors, and embeddings](https://medium.com/@saschametzger/what-are-tokens-vectors-and-embeddings-how-do-you-create-them-e2a3e698e037)
-
-
+:::
 
 ---
 
 ## Key Concepts in NLP 
 
-::: {.columns}
-::: {.column width="80%"}
 ### Transformers
+::: {.columns}
+::: {.column width="70%"}
+<div class="justify-paragraph">
 - **Definition**: A neural network architecture designed for processing sequential data by focusing on relationships between elements regardless of their distance in the sequence.
 - **Key Mechanism**: Uses self-attention to weigh the importance of different elements in the sequence.
 - **Advantages**: Captures long-range dependencies and parallelizes processing for efficiency.
 - **Application in DNA**: Identifies long-distance interactions in genomic sequences, such as enhancer-promoter connections.
+</div>
 :::
 
-::: {.column width="20%"}
-The king eat an apple
+::: {.column width="30%"}
 
-Decoder
-
-Encoder
-
-Le roi mange une banane 
+![Fig: Schema transformer](img/transformer.png){fig-align="center"}
 :::
 :::
+
 
 ::: footer
  More explanation :
@@ -161,44 +157,44 @@ https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders
 ## Key Concepts in NLP
 
 ### Fine-Tuning
+<div class="justify-paragraph">
 - **Definition**: Adapting a pre-trained model to a specific task by training it further on a smaller, task-specific dataset.
 - **Process**: Retains the general knowledge learned during pre-training while tailoring the model to specialized data.
 - **Advantages**: Reduces computational costs and training time while improving task-specific performance.
 - **Application in DNA**: Enables models like the Nucleotide Transformer to specialize in tasks such as variant effect prediction or functional annotation.
-
-![Nucleotide Transformer](images/nucleotide-transformer.png)
+</div>
+![Fig: Nucleotide Transformer](img/training.png){fig-align="center"}
+From : Nucleotide Transformer: building and evaluating robust foundation models for human genomics
+https://www.nature.com/articles/s41592-024-02523-z
 
 
 ---
 
-## Various Types of Models
+## Various types of Models
 
-::: {.columns}
-::: {.column width="30%"}
 ### **Multitask Nature**:
-#### AI models for DNA are designed to handle a wide range of genomic tasks, including:
+##### AI models for DNA are designed to handle a wide range of genomic tasks, including:
 - **Sequence Prediction**: Predicting nucleotide sequences (e.g., GROVER).  
 - **Gene Expression**: Modeling long-range interactions (e.g., Nucleotide Transformer).  
 - **Mutation Analysis**: Predicting the fitness impact of mutations (e.g., Evo).  
 - **Functional Annotation**: Identifying promoters, enhancers, or protein-binding sites.
-:::
 
-::: {.column width="30%"}
+### **Training Data**:
+#### The datasets used vary significantly depending on the application:
+- Human genome
+- Multi-species datasets (eukaryotes or prokaryotes)
+- Mix
+
+---
+
+## Various types of Models
+
 ### **Multiparadigm Approach**
 #### These models integrate various paradigms to maximize performance:
 - **Foundation Models**: Pre-trained on massive datasets and fine-tuned for specific tasks (e.g., Nucleotide Transformer).  
 - **Generative Models**: Create novel genomic or functional elements (e.g., Evo for synthetic CRISPR systems).  
 - **Supervised Models**: Use labeled data for targeted functional predictions (e.g., LucaProt for protein-DNA interactions).
 
-:::
-
-::: {.column width="30%"}
-### **Training Data**:
-#### The datasets used vary significantly depending on the application:
-- Human genome or multi-species datasets (eukaryotes or prokaryotes).
-- Other specialized datasets as needed.
-:::
-:::
 
 
 
@@ -211,7 +207,7 @@ https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders
 **Application**: Predicting genome elements like promoters and enhancers.  
 **Data**: Exclusively human genome.
 
-### Details:
+#### Details:
 - **Training Details**:
   - **Data Used**: Exclusively trained on the human genome sequence.  
 - **Model Architecture**:
