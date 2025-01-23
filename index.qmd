@@ -81,7 +81,7 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 :::
 
 ::: {.column width="30%"} 
-[Evo](https://github.com/evo-design/evo)  
+
 :::
 :::
 
@@ -91,16 +91,16 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 
 ### Token 
 **Definition**: Transforming a sequence into a list of smaller components called "tokens."
-**Example**: 
+**Example**:  
 "The King eats an apple" -> "The", "King", "eats", "an", "apple"
-
-: "ATCGTAGC" -> "ATC", "GTA", "GC"
+<br>
+"ATCGTAGC" -> "ATC", "GTA", "GC"
 
 ### Embedding 
 ::: {.columns}
 ::: {.column width="60%"}
-**Definition**: Each token is transformed into a vector that captures its relationships with others.
-To do this, you define a dictionary which is a list of all the tokens/words in your corpus.
+**Definition**: Each token is transformed into a vector that captures its relationships with others. To do this, you define a dictionary which is a list of all the tokens/words in your corpus.
+<br>
 **Training**: Requires pre-training on data to infer patterns and relationships.
 :::
 
@@ -134,27 +134,29 @@ More information: [Medium article on tokens, vectors, and embeddings](https://me
 :::
 :::
 
-
 ::: footer
- More explanation :
-https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b
+More information: [Medium article on transformer encoder/decoders](https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders-in-depth-with-visuals-30805c23659b)
 :::
 
 
 ---
 
-## Key Concepts in NLP 
+## NLP training
 
 ### Masked Language Modeling (MLM)
 
 - **Definition**: A training objective where some tokens in the sequence are masked and the model learns to predict them based on context.
 
-- **Importance**: Helps the model understand relationships and dependencies between elements in a sequence.
-
 - **Application in DNA**: Enables models to infer missing or obscured nucleotide sequences and learn patterns in genomic data.
---- 
 
-## Key Concepts in NLP
+### Causal Language Modeling (CLM)
+- **Definition**: A training objective where the model predicts the next token in a sequence based only on the preceding tokens, ensuring a unidirectional flow of information.
+
+- **Application in DNA**: Helps in simulating nucleotide sequences by predicting the next nucleotide based on the sequence context, useful in genome assembly or generating synthetic DNA sequences.
+
+---
+
+## NLP training
 
 ### Fine-Tuning
 <div class="justify-paragraph">
@@ -163,10 +165,16 @@ https://medium.com/@ahmadsabry678/a-perfect-guide-to-understand-encoder-decoders
 - **Advantages**: Reduces computational costs and training time while improving task-specific performance.
 - **Application in DNA**: Enables models like the Nucleotide Transformer to specialize in tasks such as variant effect prediction or functional annotation.
 </div>
-![Fig: Nucleotide Transformer](img/training.png){fig-align="center"}
-From : Nucleotide Transformer: building and evaluating robust foundation models for human genomics
-https://www.nature.com/articles/s41592-024-02523-z
 
+--- 
+
+## NLP training
+![Fig: Nucleotide Transformer](img/training.png)
+</br>
+
+::: footer
+From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-024-02523-z)
+:::
 
 ---
 
@@ -193,7 +201,7 @@ https://www.nature.com/articles/s41592-024-02523-z
 #### These models integrate various paradigms to maximize performance:
 - **Foundation Models**: Pre-trained on massive datasets and fine-tuned for specific tasks (e.g., Nucleotide Transformer).  
 - **Generative Models**: Create novel genomic or functional elements (e.g., Evo for synthetic CRISPR systems).  
-- **Supervised Models**: Use labeled data for targeted functional predictions (e.g., LucaProt for protein-DNA interactions).
+- **Supervised Models**: Use labeled data for targeted functional predictions (e.g., LucaProt).
 
 
 
@@ -313,4 +321,4 @@ https://www.nature.com/articles/s41592-024-02523-z
   - Model optimization: Employed advanced techniques to fine-tune parameters for improved performance.  
 
 ---
-
+## ...
