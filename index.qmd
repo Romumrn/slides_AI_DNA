@@ -42,36 +42,45 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 
 ## General context 
 
+::: {style="font-size: 80%;"}
 ::: {.columns}
 ::: {.column width="70%"}
 ### Key Applications
-**Sequence Analysis**: Predict nucleotide sequences and structural motifs.  
+**Functional genomic element**: Identify promoters, enhancers, and other regulatory elements.  
 :::
 
 ::: {.column width="30%"}
-### Models
-[DNABERT](https://github.com/MAGICS-LAB/DNABERT_2),
-[GROVER](https://huggingface.co/PoetschLab/GROVER)  
-:::
-:::
-
-::: {.columns}
-::: {.column width="70%"}
-**Gene Function Prediction**: Identify promoters, enhancers, and other regulatory elements.  
-:::
-
-::: {.column width="30%"}
+### Model
+[DNABERT2](https://github.com/MAGICS-LAB/DNABERT_2),
+[GROVER](https://huggingface.co/PoetschLab/GROVER)  ,
 [Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
+
 :::
 :::
 
 ::: {.columns}
 ::: {.column width="70%"}
-**Variant Impact Assessment**: Analyze the effects of genetic mutations on gene expression and fitness.  
+**Predict Gene Result:** Predicting the functional outcomes of genes, such as expression levels, protein production, or phenotype
+:::
+
+::: {.column width="30%"}
+[DNABERT2](https://github.com/MAGICS-LAB/DNABERT_2),
+[GROVER](https://huggingface.co/PoetschLab/GROVER)  ,
+[Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
+[LucaProt](https://github.com/alibaba/LucaProt)  
+
+:::
+:::
+
+
+::: {.columns}
+::: {.column width="70%"}
+**Variant Impact Assessment:** Analyze the effects of genetic mutations on gene expression and fitness.
 :::
 
 ::: {.column width="30%"} 
-[Evo](https://github.com/evo-design/evo)  
+[Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
+[Evo](https://github.com/evo-design/evo) 
 :::
 :::
 
@@ -81,10 +90,33 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 :::
 
 ::: {.column width="30%"} 
+[Syngenome By Evo](https://evodesign.org/syngenome/about) 
+:::
+:::
+
+
+::: {.columns}
+::: {.column width="70%"}
+**Multi-Species Genome Analysis**
+:::
+
+::: {.column width="30%"} 
+[DNABERT2](https://github.com/MAGICS-LAB/DNABERT_2)
+:::
+:::
+
+::: {.columns}
+::: {.column width="70%"}
+**And more ...**
+:::
+
+::: {.column width="30%"} 
 
 :::
 :::
 
+
+:::
 ---
 
 ## Key Concepts in NLP 
@@ -211,13 +243,22 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
 
 ## Grover
 
-**Focus**: Understanding DNA grammar and sequence structure.  
+::: {style="font-size: 80%;"}
+
+**Focus**: Understanding DNA grammar and sequence structure.
+
 **Application**: Predicting genome elements like promoters and enhancers.  
+
 **Data**: Exclusively human genome.
 
+**Performance**:
+
+- **Accuracy**: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences.  
+- **Comparison**: Outperformed other models in genome biology tasks.  
+- **Context Learning**: Modeled sequence context and structural nuances within the human genome.
+
 #### Details:
-- **Training Details**:
-  - **Data Used**: Exclusively trained on the human genome sequence.  
+- **Data Used**: Exclusively trained on the human genome sequence.  
 - **Model Architecture**:
   - **Byte Pair Encoding (BPE)**: Established a vocabulary tailored for genomic sequences.  
   - **Model Size**: Not disclosed.  
@@ -227,25 +268,29 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - **Genome Element Identification**: Identifying promoters, enhancers, and other genomic elements.  
   - **Protein–DNA Binding Prediction**: Assessing binding affinities between proteins and DNA sequences.  
 
-**Performance**:
-- **Accuracy**: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences.  
-- **Comparison**: Outperformed other models in genome biology tasks.  
-- **Context Learning**: Modeled sequence context and structural nuances within the human genome.
-
+:::
 ---
 
 ## Nucleotide Transformer
+::: {style="font-size: 80%;"}
+**Focus**: Long-range context for gene expression and variant predictions.
 
-**Focus**: Long-range context for gene expression and variant predictions.  
-**Application**: Multi-species genomic tasks and molecular phenotype prediction.  
+**Application**:  Multi-species genomic tasks and molecular phenotype prediction.
+
 **Data**: Genomes from humans and 850 species.
 
+**Performance:**
+
+- **Handles Long Sequences**: Utilizes transformer architecture to process extensive DNA sequences efficiently and accurately.  
+- **Superior Variant Impact Prediction**: Achieves superior performance in predicting the impact of genetic variants.  
+- **Nucleotide-Level Genomic Segmentation**: Excellent at segmenting genomic sequences at the nucleotide level.  
+- **Pretrained on Vast Genomic Datasets**: Leverages a broad range of genomic data, enabling applicability across diverse genomics challenges.  
+
 #### Details:
-- **Training Details**:
-  - **GPUs Used**: 128 GPUs across 16 compute nodes for 28 days.  
-  - **Data Used**:
-    - 3,202 human genomes (1000 Genomes Project).  
-    - 850 genomes from diverse species (model & non-model organisms).  
+- **GPUs Used**: 128 GPUs across 16 compute nodes for 28 days.  
+- **Data Used**:
+  - 3,202 human genomes (1000 Genomes Project).  
+  - 850 genomes from diverse species (model & non-model organisms).  
 - **Pre-training**: Combined human and species-diverse genome datasets.  
 - **Fine-tuning**: Specific tasks and datasets, including the 1000 Genomes Project.  
 - **Model Architecture**:
@@ -261,18 +306,26 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
 - **Outcomes**:
   - Accurate predictions, even with limited data.  
   - Outperformed specialized methods on multiple tasks.  
-
+:::
 ---
 
 ## Evo – A Genomic Foundation Model
-
+::: {style="font-size: 80%;"}
 **Focus**: Multimodal genome-scale modeling (DNA, RNA, and proteins).  
+
 **Application**: Zero-shot predictions, mutation impact, and synthetic genome generation.  
+
 **Data**: 2.7M prokaryotic and phage genomes.
 
+**Performance:**
+
+- **Zero-shot predictions:** Competitive with, or outperformed, leading domain-specific language models.  
+- **Functional system generation:** Successfully generated novel protein-RNA and protein-DNA systems.  
+- **Mutation impact:** Accurately predicted fitness effects at nucleotide resolution.  
+- Evo 1.5 model to generate SynGenome, the first AI-generated genomics database containing over 100 bp pairs of synthetic DNA sequences. 
+
 #### Details:
-- **Training Details**:
-  - **Data Used**: 2.7 million raw prokaryotic and phage genome sequences.  
+- **Data Used**: 2.7 million raw prokaryotic and phage genome sequences.  
 - **Model Architecture**:
   - **Size**: 7 billion parameters.  
   - **Context Length**: Processes sequences up to 131 kilobases (kb) at single-nucleotide, byte resolution.  
@@ -280,45 +333,48 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - Zero-shot function prediction: Assessed across DNA, RNA, and proteins.  
   - Functional system generation: Created synthetic CRISPR-Cas complexes and transposable elements.  
   - Mutation impact analysis: Predicted effects of small mutations on organismal fitness.  
-  - Long-sequence generation: Produced coding-rich sequences up to 650 kb in length.  
-- **Performance**:
-  - Zero-shot predictions: Competitive with, or outperformed, leading domain-specific language models.  
-  - Functional system generation: Successfully generated novel protein-RNA and protein-DNA systems.  
-  - Mutation impact: Accurately predicted fitness effects at nucleotide resolution.  
-  - Long-sequence generation: Created sequences with plausible genomic architecture.  
+  - Long-sequence generation: Produced coding-rich sequences up to 650 kb in length.   
 - **Training Methodology**:
-  - Foundation model training: Leveraged large-scale genomic data to learn representations across molecular modalities.  
-  - Multiscale modeling: Enabled tasks from molecular to genome scale, encompassing DNA, RNA, and protein sequences.  
-  - Generative design: Facilitated the creation of novel genetic elements and systems.  
-
+  - **Foundation model training:** Leveraged large-scale genomic data to learn representations across molecular modalities.  
+  - **Multiscale modeling:** Enabled tasks from molecular to genome scale, encompassing DNA, RNA, and protein sequences.  
+  - **Generative design:** Facilitated the creation of novel genetic elements and systems.  
+:::
 ---
 
-## LucaProt
+## LucaProt 
 
+::: {style="font-size: 80%;"}
 **Focus**: Protein function prediction using sequence and structure integration.  
+
 **Application**: Functional annotation and discovery of viral proteins.  
+
 **Data**: Protein sequences and structural information.
 
+**Performance**:
+
+- **Accuracy:** Demonstrated high accuracy in predicting protein functions across various datasets.  
+- **Robustness:** Maintained performance across different protein families and functional categories.  
+
+
 #### Details:
-- **Training Details**:
-  - **Data Used**:
+- **Data Used**:
     - Protein amino acid sequences: Comprehensive datasets encompassing diverse proteins.  
     - Structural information: Incorporation of protein structural data to enhance prediction accuracy.  
 - **Model Architecture**:
-  - **Components**:
     - Input Module: Processes raw protein sequences and structural information.  
     - Tokenizer + Encoder + Pooling Layer.  
     - Output Module: Performs classification to predict protein functions.  
 - **Validation & Testing**:
   - Viral RdRP Identification: Applied to detect RNA-dependent RNA polymerase sequences in viruses.  
   - General Protein Function Annotation: Evaluated on multi-label classification tasks for diverse protein functions.  
-- **Performance**:
-  - Accuracy: Demonstrated high accuracy in predicting protein functions across various datasets.  
-  - Robustness: Maintained performance across different protein families and functional categories.  
 - **Training Methodology**:
-  - Sequence and structure integration: Combined amino acid sequences with structural data to enhance predictive capabilities.  
-  - Supervised learning: Trained on labeled datasets with known protein functions to learn accurate mappings.  
-  - Model optimization: Employed advanced techniques to fine-tune parameters for improved performance.  
+  - **Sequence and structure integration:** Combined amino acid sequences with structural data to enhance predictive capabilities.  
+  - **Supervised learning:** Trained on labeled datasets with known protein functions to learn accurate mappings.  
+  - **Model optimization:** Employed advanced techniques to fine-tune parameters for improved performance.  
 
+:::
 ---
 ## ...
+
+
+Please feel free to suggest any new models for inclusion in these slides, or contact us for further inquiries.

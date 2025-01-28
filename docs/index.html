@@ -158,32 +158,42 @@ Romuald Marin
 <img data-src="img/DNA_strands.png" alt="DNA strands represenation img" class="r-stretch quarto-figure-center"><p class="caption">Fig: DNA strands represenation</p></section>
 <section id="general-context-1" class="slide level2">
 <h2>General context</h2>
+<div style="font-size: 80%;">
 <div class="columns">
 <div class="column" style="width:70%;">
 <h3 id="key-applications">Key Applications</h3>
-<p><strong>Sequence Analysis</strong>: Predict nucleotide sequences and structural motifs.</p>
+<p><strong>Functional genomic element</strong>: Identify promoters, enhancers, and other regulatory elements.</p>
 </div><div class="column" style="width:30%;">
-<h3 id="models">Models</h3>
-<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT</a>, <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a></p>
+<h3 id="model">Model</h3>
+<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT2</a>, <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a> , <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformer</a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p><strong>Gene Function Prediction</strong>: Identify promoters, enhancers, and other regulatory elements.</p>
+<p><strong>Predict Gene Result:</strong> Predicting the functional outcomes of genes, such as expression levels, protein production, or phenotype</p>
 </div><div class="column" style="width:30%;">
-<p><a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformer</a></p>
+<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT2</a>, <a href="https://huggingface.co/PoetschLab/GROVER">GROVER</a> , <a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformer</a><br>
+<a href="https://github.com/alibaba/LucaProt">LucaProt</a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p><strong>Variant Impact Assessment</strong>: Analyze the effects of genetic mutations on gene expression and fitness.</p>
+<p><strong>Variant Impact Assessment:</strong> Analyze the effects of genetic mutations on gene expression and fitness.</p>
 </div><div class="column" style="width:30%;">
-<p><a href="https://github.com/evo-design/evo">Evo</a></p>
+<p><a href="https://github.com/instadeepai/nucleotide-transformer">Nucleotide Transformer</a><br>
+<a href="https://github.com/evo-design/evo">Evo</a></p>
 </div></div>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><strong>Synthetic Biology</strong>: Design novel genetic elements and entire genomes.</p>
 </div><div class="column" style="width:30%;">
-
+<p><a href="https://evodesign.org/syngenome/about">Syngenome By Evo</a></p>
 </div></div>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><strong>Multi-Species Genome Analysis</strong></p>
+</div><div class="column" style="width:30%;">
+<p><a href="https://github.com/MAGICS-LAB/DNABERT_2">DNABERT2</a></p>
+</div></div>
+</div>
 </section>
 <section id="key-concepts-in-nlp" class="slide level2">
 <h2>Key Concepts in NLP</h2>
@@ -298,16 +308,22 @@ Romuald Marin
 </section>
 <section id="grover" class="slide level2">
 <h2>Grover</h2>
-<p><strong>Focus</strong>: Understanding DNA grammar and sequence structure.<br>
-<strong>Application</strong>: Predicting genome elements like promoters and enhancers.<br>
-<strong>Data</strong>: Exclusively human genome.</p>
-<h4 id="details">Details:</h4>
+<div style="font-size: 80%;">
+<p><strong>Focus</strong>: Understanding DNA grammar and sequence structure.</p>
+<p><strong>Application</strong>: Predicting genome elements like promoters and enhancers.</p>
+<p><strong>Data</strong>: Exclusively human genome.</p>
+<p><strong>Performance</strong>:</p>
 <ul>
-<li><strong>Training Details</strong>:
+<li><strong>Accuracy</strong>: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences.<br>
+</li>
+<li><strong>Comparison</strong>: Outperformed other models in genome biology tasks.<br>
+</li>
+<li><strong>Context Learning</strong>: Modeled sequence context and structural nuances within the human genome.</li>
+</ul>
+<h4 id="details">Details:</h4>
 <ul>
 <li><strong>Data Used</strong>: Exclusively trained on the human genome sequence.<br>
 </li>
-</ul></li>
 <li><strong>Model Architecture</strong>:
 <ul>
 <li><strong>Byte Pair Encoding (BPE)</strong>: Established a vocabulary tailored for genomic sequences.<br>
@@ -327,18 +343,25 @@ Romuald Marin
 <li><strong>Protein–DNA Binding Prediction</strong>: Assessing binding affinities between proteins and DNA sequences.</li>
 </ul></li>
 </ul>
-<p><strong>Performance</strong>: - <strong>Accuracy</strong>: Achieved 2% accuracy in predicting the next 6-mers in DNA sequences.<br>
-- <strong>Comparison</strong>: Outperformed other models in genome biology tasks.<br>
-- <strong>Context Learning</strong>: Modeled sequence context and structural nuances within the human genome.</p>
+</div>
 </section>
 <section id="nucleotide-transformer" class="slide level2">
 <h2>Nucleotide Transformer</h2>
-<p><strong>Focus</strong>: Long-range context for gene expression and variant predictions.<br>
-<strong>Application</strong>: Multi-species genomic tasks and molecular phenotype prediction.<br>
-<strong>Data</strong>: Genomes from humans and 850 species.</p>
-<h4 id="details-1">Details:</h4>
+<div style="font-size: 80%;">
+<p><strong>Focus</strong>: Long-range context for gene expression and variant predictions.</p>
+<p><strong>Application</strong>: Multi-species genomic tasks and molecular phenotype prediction.</p>
+<p><strong>Data</strong>: Genomes from humans and 850 species.</p>
+<p><strong>Performance:</strong></p>
 <ul>
-<li><strong>Training Details</strong>:
+<li><strong>Handles Long Sequences</strong>: Utilizes transformer architecture to process extensive DNA sequences efficiently and accurately.<br>
+</li>
+<li><strong>Superior Variant Impact Prediction</strong>: Achieves superior performance in predicting the impact of genetic variants.<br>
+</li>
+<li><strong>Nucleotide-Level Genomic Segmentation</strong>: Excellent at segmenting genomic sequences at the nucleotide level.<br>
+</li>
+<li><strong>Pretrained on Vast Genomic Datasets</strong>: Leverages a broad range of genomic data, enabling applicability across diverse genomics challenges.</li>
+</ul>
+<h4 id="details-1">Details:</h4>
 <ul>
 <li><strong>GPUs Used</strong>: 128 GPUs across 16 compute nodes for 28 days.<br>
 </li>
@@ -348,7 +371,6 @@ Romuald Marin
 </li>
 <li>850 genomes from diverse species (model &amp; non-model organisms).<br>
 </li>
-</ul></li>
 </ul></li>
 <li><strong>Pre-training</strong>: Combined human and species-diverse genome datasets.<br>
 </li>
@@ -381,22 +403,32 @@ Romuald Marin
 <ul>
 <li>Accurate predictions, even with limited data.<br>
 </li>
-<li>Outperformed specialized methods on multiple tasks.</li>
+<li>Outperformed specialized methods on multiple tasks.<br>
+</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="evo-a-genomic-foundation-model" class="slide level2">
 <h2>Evo – A Genomic Foundation Model</h2>
-<p><strong>Focus</strong>: Multimodal genome-scale modeling (DNA, RNA, and proteins).<br>
-<strong>Application</strong>: Zero-shot predictions, mutation impact, and synthetic genome generation.<br>
-<strong>Data</strong>: 2.7M prokaryotic and phage genomes.</p>
-<h4 id="details-2">Details:</h4>
+<div style="font-size: 80%;">
+<p><strong>Focus</strong>: Multimodal genome-scale modeling (DNA, RNA, and proteins).</p>
+<p><strong>Application</strong>: Zero-shot predictions, mutation impact, and synthetic genome generation.</p>
+<p><strong>Data</strong>: 2.7M prokaryotic and phage genomes.</p>
+<p><strong>Performance:</strong></p>
 <ul>
-<li><strong>Training Details</strong>:
+<li><strong>Zero-shot predictions:</strong> Competitive with, or outperformed, leading domain-specific language models.<br>
+</li>
+<li><strong>Functional system generation:</strong> Successfully generated novel protein-RNA and protein-DNA systems.<br>
+</li>
+<li><strong>Mutation impact:</strong> Accurately predicted fitness effects at nucleotide resolution.<br>
+</li>
+<li>Evo 1.5 model to generate SynGenome, the first AI-generated genomics database containing over 100 bp pairs of synthetic DNA sequences.</li>
+</ul>
+<h4 id="details-2">Details:</h4>
 <ul>
 <li><strong>Data Used</strong>: 2.7 million raw prokaryotic and phage genome sequences.<br>
 </li>
-</ul></li>
 <li><strong>Model Architecture</strong>:
 <ul>
 <li><strong>Size</strong>: 7 billion parameters.<br>
@@ -415,35 +447,31 @@ Romuald Marin
 <li>Long-sequence generation: Produced coding-rich sequences up to 650 kb in length.<br>
 </li>
 </ul></li>
-<li><strong>Performance</strong>:
-<ul>
-<li>Zero-shot predictions: Competitive with, or outperformed, leading domain-specific language models.<br>
-</li>
-<li>Functional system generation: Successfully generated novel protein-RNA and protein-DNA systems.<br>
-</li>
-<li>Mutation impact: Accurately predicted fitness effects at nucleotide resolution.<br>
-</li>
-<li>Long-sequence generation: Created sequences with plausible genomic architecture.<br>
-</li>
-</ul></li>
 <li><strong>Training Methodology</strong>:
 <ul>
-<li>Foundation model training: Leveraged large-scale genomic data to learn representations across molecular modalities.<br>
+<li><strong>Foundation model training:</strong> Leveraged large-scale genomic data to learn representations across molecular modalities.<br>
 </li>
-<li>Multiscale modeling: Enabled tasks from molecular to genome scale, encompassing DNA, RNA, and protein sequences.<br>
+<li><strong>Multiscale modeling:</strong> Enabled tasks from molecular to genome scale, encompassing DNA, RNA, and protein sequences.<br>
 </li>
-<li>Generative design: Facilitated the creation of novel genetic elements and systems.</li>
+<li><strong>Generative design:</strong> Facilitated the creation of novel genetic elements and systems.<br>
+</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="lucaprot" class="slide level2">
 <h2>LucaProt</h2>
-<p><strong>Focus</strong>: Protein function prediction using sequence and structure integration.<br>
-<strong>Application</strong>: Functional annotation and discovery of viral proteins.<br>
-<strong>Data</strong>: Protein sequences and structural information.</p>
-<h4 id="details-3">Details:</h4>
+<div style="font-size: 80%;">
+<p><strong>Focus</strong>: Protein function prediction using sequence and structure integration.</p>
+<p><strong>Application</strong>: Functional annotation and discovery of viral proteins.</p>
+<p><strong>Data</strong>: Protein sequences and structural information.</p>
+<p><strong>Performance</strong>:</p>
 <ul>
-<li><strong>Training Details</strong>:
+<li><strong>Accuracy:</strong> Demonstrated high accuracy in predicting protein functions across various datasets.<br>
+</li>
+<li><strong>Robustness:</strong> Maintained performance across different protein families and functional categories.</li>
+</ul>
+<h4 id="details-3">Details:</h4>
 <ul>
 <li><strong>Data Used</strong>:
 <ul>
@@ -452,10 +480,7 @@ Romuald Marin
 <li>Structural information: Incorporation of protein structural data to enhance prediction accuracy.<br>
 </li>
 </ul></li>
-</ul></li>
 <li><strong>Model Architecture</strong>:
-<ul>
-<li><strong>Components</strong>:
 <ul>
 <li>Input Module: Processes raw protein sequences and structural information.<br>
 </li>
@@ -464,7 +489,6 @@ Romuald Marin
 <li>Output Module: Performs classification to predict protein functions.<br>
 </li>
 </ul></li>
-</ul></li>
 <li><strong>Validation &amp; Testing</strong>:
 <ul>
 <li>Viral RdRP Identification: Applied to detect RNA-dependent RNA polymerase sequences in viruses.<br>
@@ -472,25 +496,20 @@ Romuald Marin
 <li>General Protein Function Annotation: Evaluated on multi-label classification tasks for diverse protein functions.<br>
 </li>
 </ul></li>
-<li><strong>Performance</strong>:
-<ul>
-<li>Accuracy: Demonstrated high accuracy in predicting protein functions across various datasets.<br>
-</li>
-<li>Robustness: Maintained performance across different protein families and functional categories.<br>
-</li>
-</ul></li>
 <li><strong>Training Methodology</strong>:
 <ul>
-<li>Sequence and structure integration: Combined amino acid sequences with structural data to enhance predictive capabilities.<br>
+<li><strong>Sequence and structure integration:</strong> Combined amino acid sequences with structural data to enhance predictive capabilities.<br>
 </li>
-<li>Supervised learning: Trained on labeled datasets with known protein functions to learn accurate mappings.<br>
+<li><strong>Supervised learning:</strong> Trained on labeled datasets with known protein functions to learn accurate mappings.<br>
 </li>
-<li>Model optimization: Employed advanced techniques to fine-tune parameters for improved performance.</li>
+<li><strong>Model optimization:</strong> Employed advanced techniques to fine-tune parameters for improved performance.</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="section" class="slide level2">
 <h2>…</h2>
+<p>Please feel free to suggest any new models for inclusion in these slides, or contact us for further inquiries.</p>
 
 </section>
     </div>
