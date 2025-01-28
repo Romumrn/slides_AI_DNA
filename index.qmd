@@ -66,7 +66,7 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 ::: {.column width="30%"}
 [DNABERT2](https://github.com/MAGICS-LAB/DNABERT_2),
 [GROVER](https://huggingface.co/PoetschLab/GROVER)  ,
-[Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer)  
+[Nucleotide Transformer](https://github.com/instadeepai/nucleotide-transformer),
 [LucaProt](https://github.com/alibaba/LucaProt)  
 
 :::
@@ -107,7 +107,7 @@ AI makes it possible to identify patterns and relationships in DNA sequences tha
 
 ::: {.columns}
 ::: {.column width="70%"}
-**And more ...**
+And more ...
 :::
 
 ::: {.column width="30%"} 
