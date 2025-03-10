@@ -241,7 +241,7 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
 ---
 
 
-## Grover
+## Grover 
 
 ::: {style="font-size: 80%;"}
 
@@ -268,6 +268,10 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - **Genome Element Identification**: Identifying promoters, enhancers, and other genomic elements.  
   - **Protein–DNA Binding Prediction**: Assessing binding affinities between proteins and DNA sequences.  
 
+:::
+
+::: footer
+Link: [GROVER](https://huggingface.co/PoetschLab/GROVER)
 :::
 ---
 
@@ -307,6 +311,12 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - Accurate predictions, even with limited data.  
   - Outperformed specialized methods on multiple tasks.  
 :::
+
+::: footer
+Link: [NT](https://www.nature.com/articles/s41592-024-02523-z)
+:::
+
+
 ---
 
 ## Evo – A Genomic Foundation Model
@@ -339,6 +349,13 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - **Multiscale modeling:** Enabled tasks from molecular to genome scale, encompassing DNA, RNA, and protein sequences.  
   - **Generative design:** Facilitated the creation of novel genetic elements and systems.  
 :::
+
+
+::: footer
+Link: [Github evo2](https://github.com/arcinstitute/evo2)
+:::
+
+
 ---
 
 ## LucaProt 
@@ -373,6 +390,10 @@ From : [Nucleotide Transformer article](https://www.nature.com/articles/s41592-
   - **Model optimization:** Employed advanced techniques to fine-tune parameters for improved performance.  
 
 :::
+::: footer
+Link: [Github Lucaprot](https://github.com/alibaba/LucaProt)
+:::
+
 ---
 ## ...
 
