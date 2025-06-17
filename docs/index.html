@@ -248,6 +248,8 @@ Romuald Marin
 </section>
 <section id="nlp-training" class="slide level2">
 <h2>NLP training</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
 <h3 id="masked-language-modeling-mlm">Masked Language Modeling (MLM)</h3>
 <ul>
 <li><p><strong>Definition</strong>: A training objective where some tokens in the sequence are masked and the model learns to predict them based on context.</p></li>
@@ -258,6 +260,14 @@ Romuald Marin
 <li><p><strong>Definition</strong>: A training objective where the model predicts the next token in a sequence based only on the preceding tokens, ensuring a unidirectional flow of information.</p></li>
 <li><p><strong>Application in DNA</strong>: Helps in simulating nucleotide sequences by predicting the next nucleotide based on the sequence context, useful in genome assembly or generating synthetic DNA sequences.</p></li>
 </ul>
+</div><div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./img/mlm_clm.png"></p>
+<figcaption>Fig: Schema MLM CLM</figcaption>
+</figure>
+</div>
+</div></div>
 </section>
 <section id="nlp-training-1" class="slide level2">
 <h2>NLP training</h2>

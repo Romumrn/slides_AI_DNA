@@ -175,6 +175,8 @@ More information: [Medium article on transformer encoder/decoders](https://mediu
 
 ## NLP training
 
+::: {.columns}
+::: {.column width="80%"}
 ### Masked Language Modeling (MLM)
 
 - **Definition**: A training objective where some tokens in the sequence are masked and the model learns to predict them based on context.
@@ -185,6 +187,13 @@ More information: [Medium article on transformer encoder/decoders](https://mediu
 - **Definition**: A training objective where the model predicts the next token in a sequence based only on the preceding tokens, ensuring a unidirectional flow of information.
 
 - **Application in DNA**: Helps in simulating nucleotide sequences by predicting the next nucleotide based on the sequence context, useful in genome assembly or generating synthetic DNA sequences.
+
+:::
+
+::: {.column width="20%"}
+![Fig: Schema MLM CLM](/img/mlm_clm.png){fig-align="center"}
+:::
+:::
 
 ---
 
